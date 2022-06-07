@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Diplay Flex direction</title>
+    <style>
+        .title{
+            font-size: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: lightcoral;
+        }
+        .flex-container{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style:none;
+        }
+        .flex-item{
+            background: blue;
+            height: 50px;
+            width: 70px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+        .row{
+            flex-direction: row;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .row-reverse li{
+            background-color: red;
+        }
+        .column{
+            float: left;
+            flex-direction: column;
+        }
+        .column li {
+            background: orange;
+        }
+        .column-reverse{
+            float: right;
+            flex-direction: column-reverse;
+        }
+        .column-reverse li{
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">flex direction</h1>
+    </header>
+    <ul class="flex-container">
+        <li class="flex-item">[1]r</li>
+        <li class="flex-item">[2]o</li>
+        <li class="flex-item">[3]w</li>
+        <li class="flex-item">[4]w</li>
+        <li class="flex-item">[5]w</li>
+    </ul>
+    <ul class="flex-container row-reverse">
+        <li class="flex-item">[1]v</li>
+        <li class="flex-item">[2]r</li>
+        <li class="flex-item">[3]w</li>
+        <li class="flex-item">[4]o</li>
+        <li class="flex-item">[5]r</li>
+    </ul>
+    <ul class="flex-container column">
+        <li class="flex-item">[1]c</li>
+        <li class="flex-item">[2]o</li>
+        <li class="flex-item">[3]l</li>
+        <li class="flex-item">[4]m</li>
+        <li class="flex-item">[5]n</li>
+    </ul>
+    <ul class="flex-container column-reverse">
+        <li class="flex-item">[1]se</li>
+        <li class="flex-item">[2]ver</li>
+        <li class="flex-item">[3]re</li>
+        <li class="flex-item">[4]lumn</li>
+        <li class="flex-item">[5]co</li>
+    </ul>
+    
+</body>
+</html>
